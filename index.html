@@ -17,19 +17,41 @@
       <input type="email" id="email" placeholder="Enter your email" required>
       <label id="number-label" for="number" >Number</label>
       <input type="number" id="number" min=0 max=130 placeholder="Enter your age">
-      <select id="dropdown">
-        <option value="student">Student</option>
+      
+      <fieldset>
+          <legend>Which option best describes your current role?</legend>
+      <select id="dropdown-1">
+        <option value="challenges">challenges</option>
         <option value="full-time-job">Full Time Job</option>
         <option value="full-time-learner">Full Time Learner</option>
         <option value="prefer-not-to-say">Prefer not to Say</option>
         <option value="other">Other</option>
       </select>
-      <input id="definitely" type="radio" name="recommend" value="definitely">
-      <label for="definitely">Definitely</label>
-      <input id="maybe" type="radio" name="recommend" value="maybe">
-      <label for="maybe">Maybe</label>
-      <input id="not-sure" type="radio" name="recommend" value="not-sure">
-      <label for="not-sure">Not Sure</label>
+      </fieldset>
+      
+      <fieldset>
+          <legend>* How likely is that you would recommend freeCodeCamp to a friend?</legend>
+        <input id="definitely" type="radio" name="recommend" value="definitely">
+        <label for="definitely">Definitely</label>
+        <input id="maybe" type="radio" name="recommend" value="maybe">
+        <label for="maybe">Maybe</label>
+        <input id="not-sure" type="radio" name="recommend" value="not-sure">
+        <label for="not-sure">Not Sure</label>
+    </fieldset>
+
+      <fieldset>
+          <legend>What do you like the most in FCC</legend>
+      <select id="dropdown-2">
+        <option value="student">Student</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open source</option>
+      </select>
+      </fieldset>
+
+      <fieldset>
+          <legend>Things that should be improved in the future
+          (Check all that apply):</legend>
       <input type="checkbox" id="front-end-projects" name="improved" value="front-end-projects">
       <label for="front-end-projects">Front End Projects</label>
       <input type="checkbox" id="back-end-projects" name="improved" value="back-end-projects">
@@ -52,6 +74,14 @@
       <label for="forum">Forum</label>
       <input type="checkbox" id="additional-resources" name="improved" value="additional-resources">
       <label for="additional-resources">Additional Resources</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Any Comments or Suggestions?</legend>
+        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+    </fieldset>
+    
+      <button type="submit" id="submit">Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

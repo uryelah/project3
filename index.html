@@ -12,16 +12,29 @@
       <p id="description">Let us know how we can improve freeCodeCamp
       </p>
       <form id="survey-form">
-        <label id="name-label" for="name" >Name</label>
-        <input type="text" id="name" placeholder="Enter your name" required>
-        <label id="email-label" for="email" >Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-        <label id="number-label" for="number" >Number</label>
-        <input type="number" id="number" min=0 max=130 placeholder="Enter your age">
+        <fieldset>
+          <legend>
+            <label id="name-label" for="name" >Name</label>
+          </legend>          
+          <input class="field" type="text" id="name" placeholder="Enter your name" required>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <label id="email-label" for="email" >Email</label>
+          </legend>
+          <input class="field" type="email" id="email" placeholder="Enter your email" required>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <label id="number-label" for="number" >Number</label>
+          </legend>
+          <input class="field" type="number" id="number" min=0 max=130 placeholder="Enter your age">
+        </fieldset>
+        
         
         <fieldset>
           <legend>Which option best describes your current role?</legend>
-        <select id="dropdown" class="field">
+        <select id="dropdown" class="field dropdown">
           <option value="challenges">challenges</option>
           <option value="full-time-job">Full Time Job</option>
           <option value="full-time-learner">Full Time Learner</option>
@@ -30,7 +43,7 @@
         </select>
         </fieldset>
         
-        <fieldset>
+        <fieldset class="radio">
             <legend>* How likely is that you would recommend freeCodeCamp to a friend?</legend>
           <div class="field">
           <label for="definitely">
@@ -47,15 +60,19 @@
 
         <fieldset>
             <legend>What do you like the most in FCC</legend>
-        <select id="dropdown-2" class="field">
+        <select id="dropdown-2" class="field dropdown">
           <option value="student">Student</option>
           <option value="projects">Projects</option>
           <option value="community">Community</option>
           <option value="open-source">Open source</option>
         </select>
         </fieldset>
+<<<<<<< HEAD
 
         <fieldset id="ch">
+=======
+        <fieldset id="checkbox-list">
+>>>>>>> 6a9060a62c0e54234e9341099c2a822a33e89fb9
             <legend>Things that should be improved in the future
             (Check all that apply):</legend>
             <div class="field">

@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+    margin: 0;
+}
+
+.form-area{
+    background-color: rgb(250, 250, 250);
+    border-radius: 10px;
+    width: 65%;
+    margin: 0 auto;
+    padding: 15px 35px;
+}
+
+#submit-button{
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    background-color: skyblue;
+    color: rgb(250, 250, 250);
+}
